@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cantinue</title>
+</head>
+<input type="text" id="table">
+<button onclick="printTable()">print</button>
+<script type="text/javascript">
+	function printTable(){
+		var num=parseInt(document.getElementById('table').value);
+		for(i=10; i>=1; i--){
+			console.log(i);
+			if(i==5){
+				continue;
+			}
+			console.log(i);
+			var result=i*num;
+			console.log(result);
+		}
+	}
+</script>
+</html>
